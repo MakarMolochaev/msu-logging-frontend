@@ -5,11 +5,80 @@
   text-align: center;
 }
 
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  border-bottom: 2px solid #4caf50;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.content-section {
+  margin-bottom: 30px;
+}
+
 .upload-section {
   margin: 20px 0;
   padding: 20px;
   border: 2px dashed #ccc;
   border-radius: 8px;
+}
+
+.recording-section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.record-button, .stop-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.record-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.record-button:hover {
+  background-color: #45a049;
+}
+
+.record-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.stop-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.stop-button:hover {
+  background-color: #d32f2f;
+}
+
+.recording-status {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
 }
 
 .status-section {
